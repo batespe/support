@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>SimAngle Support</title>
+    <style>
+        :root { --accent: #5abdf0; --amber: #fbbf24; --text: #f8fafc; --muted: #9ba8bc; --line: rgba(255,255,255,.1); }
+        * { box-sizing: border-box; }
+        body { margin: 0; min-height: 100vh; padding: 40px 16px 64px; font-family: Roboto, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text); background: radial-gradient(circle at top, #254565 0%, #03182f 50%, #000814 100%) fixed; }
+        .container { max-width: 820px; margin: 0 auto; padding: 40px 32px; border-radius: 30px; background: rgba(255,255,255,.05); border: 1px solid var(--line); backdrop-filter: blur(20px); box-shadow: 0 20px 50px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.1); }
+        header { display: flex; align-items: center; gap: 22px; padding-bottom: 28px; margin-bottom: 8px; border-bottom: 1px solid var(--line); }
+        .logo { flex: 0 0 auto; width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 10px 30px rgba(31,143,255,.45); }
+        .brand { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
+        h1 { margin: 0; font-size: 30px; font-weight: 600; letter-spacing: 1px; color: #fff; }
+        .updated { margin: 6px 0 0; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 2px; }
+        h2 { margin: 34px 0 10px; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
+        p { margin: 10px 0; color: #e2e8f0; }
+        ul { margin: 10px 0; padding-left: 0; list-style: none; }
+        li { position: relative; padding-left: 22px; margin: 6px 0; color: #e2e8f0; }
+        li::before { content: ""; position: absolute; left: 0; top: .75em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+        .faq { margin: 14px 0; }
+        .faq .q { font-weight: 600; color: #fff; margin: 18px 0 4px; }
+        .highlight { margin: 22px 0; padding: 18px 22px; border-radius: 20px; background: rgba(90,189,240,.08); border: 1px solid rgba(90,189,240,.3); }
+        .highlight p { margin: 0; font-weight: 600; color: #fff; }
+        .contact { margin-top: 24px; padding: 20px 24px; border-radius: 20px; background: rgba(255,255,255,.04); border: 1px solid var(--line); }
+        .contact strong { color: var(--amber); }
+        a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(90,189,240,.4); }
+        a:hover { border-bottom-color: var(--accent); }
+        footer { margin-top: 40px; text-align: center; color: var(--muted); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+        @media (max-width: 520px) { .container { padding: 28px 20px; border-radius: 22px; } header { flex-direction: column; align-items: flex-start; gap: 16px; } h1 { font-size: 26px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+<svg class="logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SimAngle logo" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bgGlow" cx="28%" cy="18%" r="100%">
+      <stop offset="0" stop-color="#254565"/>
+      <stop offset="0.45" stop-color="#03182f"/>
+      <stop offset="1" stop-color="#000814"/>
+    </radialGradient>
+    <linearGradient id="blueGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#dceff8"/>
+      <stop offset="0.45" stop-color="#5abdf0"/>
+      <stop offset="1" stop-color="#1f8fff"/>
+    </linearGradient>
+    <linearGradient id="whiteGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d8d8d8"/>
+    </linearGradient>
+    <linearGradient id="innerDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00162c"/>
+      <stop offset="1" stop-color="#032244"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" ry="224" fill="url(#bgGlow)"/>
+  <rect x="45" y="45" width="934" height="934" rx="190" fill="none" stroke="#36516b" stroke-width="4" opacity="0.8"/>
+  <g transform="translate(512 512) scale(1.05) translate(-520 -430)">
+    <path fill="url(#whiteGrad)" d="M370 184 H695 L614 265 H455 C405 265 362 304 360 341 C358 370 377 392 412 392 H557 L474 480 H334 C256 480 211 423 211 368 C211 303 255 236 328 196 C342 189 355 185 370 184 Z"/>
+    <circle cx="718" cy="319" r="40" fill="none" stroke="#2e97ff" stroke-width="22"/>
+    <circle cx="718" cy="319" r="48" fill="none" stroke="#1179eb" stroke-width="4" opacity="0.8"/>
+    <path fill="url(#blueGrad)" d="M286 676 L612 348 L830 676 Z"/>
+    <path fill="url(#innerDark)" d="M438 603 L608 438 L718 603 Z"/>
+  </g>
+</svg>
+            <div>
+                <p class="brand">SimAngle</p>
+                <h1>Support</h1>
+                <p class="updated">Last updated: 28 September 2026</p>
+            </div>
+        </header>
+
+        <p>Thanks for using SimAngle. This page provides help and answers to common questions. If you can't find what you need, get in touch using the contact details below.</p>
+
+        <div class="highlight"><p>SimAngle works fully offline and collects no personal data. There's no account to set up &mdash; just open the app and start.</p></div>
+
+        <h2>About SimAngle</h2>
+        <p>SimAngle is a utility app for setting up sim-racing and desktop gear. It provides three tools:</p>
+        <ul>
+            <li>Field of View (FOV) calculator</li>
+            <li>Angle finder using your device's motion sensors</li>
+            <li>Digital spirit level</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <p class="q">The angle finder or spirit level shows &ldquo;no sensors&rdquo;. Why?</p>
+            <p>These features rely on your device's built-in motion sensors (accelerometer and gyroscope). They work on a physical iPhone but are not available in a simulator or on some devices without the required hardware.</p>
+
+            <p class="q">How accurate are the readings?</p>
+            <p>SimAngle is a convenience aid, not a certified measuring instrument. Sensor accuracy depends on your device, its calibration, temperature and how it is held. Always verify measurements independently before relying on them.</p>
+
+            <p class="q">Which FOV value should I use?</p>
+            <p>Enter your screen size and seating distance and SimAngle calculates a recommended field of view. Individual games may scale FOV differently, so treat the result as a strong starting point and fine-tune to taste.</p>
+
+            <p class="q">Does SimAngle collect my data?</p>
+            <p>No. The app operates entirely offline. Sensor data is processed on your device and is never uploaded. See the <a href="PrivacyPolicy.html">Privacy Policy</a> for full details.</p>
+
+            <p class="q">Why does the app ask for Photos access?</p>
+            <p>Only if you choose to save an FOV setup image. SimAngle writes that image to your photo library on request &mdash; it never reads your existing photos.</p>
+
+            <p class="q">Do I need an account or internet connection?</p>
+            <p>No account and no connection are required. Every feature works offline.</p>
+        </div>
+
+        <h2>Contact</h2>
+        <p>If you have a question, problem or suggestion, please get in touch:</p>
+        <div class="contact">
+            <strong>Pete Bates</strong><br>
+            Email: <a href="mailto:simangle@batesuk.email">simangle@batesuk.email</a>
+        </div>
+    </div>
+    <footer>SimAngle &middot; Sim racing setup tools</footer>
+</body>
+</html>
